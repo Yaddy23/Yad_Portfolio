@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
+import yadvatar from '../assets/yadvatar.png';
 
 export default function ContactSection() {
-  // Define image properties here for easy updates
   const profileImage = {
-    src: '../assets/yadvatar.png', 
+    src: yadvatar, 
     alt: 'Gerald Nava portrait',
-    caption: 'GE R ALD NA V A' 
+    caption: 'GERALD NAVA' 
   };
 
   return (
@@ -71,16 +71,16 @@ export default function ContactSection() {
               <img
                 src={profileImage.src}
                 alt={profileImage.alt}
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+                className="w-full h-full object-cover transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
               />
             </div>
 
             {/* Optional Stylized Caption */}
             {profileImage.caption && (
-              <p className="absolute bottom-4 right-4 lg:-right-8 lg:bottom-12 z-20 font-mono text-[9px] tracking-[0.5em] text-background bg-foreground px-4 py-2 select-none pointer-events-none mix-blend-difference">
-                {profileImage.caption}
-              </p>
-            )}
+            <p className="absolute bottom-2 left-60 z-20 font-mono text-[9px] tracking-[0.5em] text-background bg-foreground px-4 py-2 select-none pointer-events-none mix-blend-difference">
+              {profileImage.caption}
+            </p>
+          )}
           </motion.div>
         </div>
       </div>
