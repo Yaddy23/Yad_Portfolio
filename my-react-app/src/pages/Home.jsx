@@ -5,6 +5,11 @@ import HorizontalGallery from '../components/HorizontalGallery';
 import AboutSection from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
 import ProjectDetail from '../components/ProjectDetail';
+import arduinoimage from '../assets/arduino.png';
+import bookinv from '../assets/bookinventory.png';
+import mobileapp from '../assets/mobileapp.png';
+import qapic from '../assets/qa.png';
+import heropic from '../assets/hero.png';
 
 const PROJECTS = [
   {
@@ -15,7 +20,7 @@ const PROJECTS = [
     tech: 'Kotlin · SQL · Arduino · Firebase',
     duration: '1 year',
     description: 'Led back-end and database development for an automated egg incubator system for fighting cocks. Integrated Arduino-based sensors for real-time temperature and humidity control, connected to a Firebase cloud database for remote tracking. Developed automated alert systems to maintain optimal incubator conditions. Won 3rd Place at the DOST–NCR R&D Conference and Best Thesis at ITechtivity Conference.',
-    image: 'https://media.base44.com/images/public/69f8587c8d4f9f1f05dd9196/302e08c6d_generated_image.png',
+    image: arduinoimage,
   },
   {
     id: 2,
@@ -25,7 +30,7 @@ const PROJECTS = [
     tech: 'Mobile · Agile · QA Testing',
     duration: '1 year',
     description: 'Developed application architecture and led back-end integration for a healthcare mobile application. Selected and implemented optimal technology stacks, conducted thorough QA testing and analysis, and facilitated communication and feedback among the development team throughout the project lifecycle.',
-    image: 'https://media.base44.com/images/public/69f8587c8d4f9f1f05dd9196/66b8f5a03_generated_image.png',
+    image: mobileapp,
   },
   {
     id: 3,
@@ -35,7 +40,7 @@ const PROJECTS = [
     tech: 'C# · WinForms · MongoDB · GitHub',
     duration: 'Ongoing',
     description: 'Built a Book Inventory Tracking System using C# WinForms and MongoDB, supporting stock monitoring, item scanning, and real-time updates. Implemented authentication features, integrated APIs for real-time data synchronization, and used GitHub for version control alongside AI-assisted development tools.',
-    image: 'https://media.base44.com/images/public/69f8587c8d4f9f1f05dd9196/db675ebe0_generated_image.png',
+    image: bookinv,
   },
   {
     id: 4,
@@ -45,7 +50,7 @@ const PROJECTS = [
     tech: 'Manual Testing · Selenium · Postman',
     duration: '6 months',
     description: 'Performed manual testing and created detailed bug reports for mobile HRM applications at Mustard Seed Systems Corporation. Collaborated on UI/UX improvements, assisted in Crystal Report generation and validation for client demos, and helped configure and test ZK Access biometric devices for access control.',
-    image: 'https://media.base44.com/images/public/69f8587c8d4f9f1f05dd9196/adb825e7f_generated_image.png',
+    image: qapic,
   },
 ];
 
@@ -70,7 +75,7 @@ export default function Home() {
 
       <div ref={heroRef}>
         <HeroSection
-          heroImage="https://media.base44.com/images/public/69f8587c8d4f9f1f05dd9196/942a776eb_generated_image.png"
+          heroImage={heropic}
           onExplore={() => handleNavigate('work')}
         />
       </div>

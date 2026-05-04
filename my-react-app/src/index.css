@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* 1. Register your variables so Tailwind recognizes border-border, bg-background, etc. */
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
+  
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
 
 @layer base {
   :root {
@@ -45,6 +55,7 @@
   }
 
   .dark {
+    /* ... your dark mode variables remain the same */
     --background: 240 7% 4%;
     --foreground: 48 20% 95%;
     --card: 240 5% 8%;
@@ -79,8 +90,6 @@
     --sidebar-ring: 186 100% 50%;
   }
 }
-
-
 
 @layer base {
   * {
