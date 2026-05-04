@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import yadvatar from '../assets/yadvatar.png';
+import yadvatar from '../assets/yadvatar2.png';
 
 export default function ContactSection() {
   const profileImage = {
