@@ -84,7 +84,7 @@ export default function AboutSection() {
               {[
                 { label: 'Projects Built', value: '4' },
                 { label: 'QA Internship', value: '6mo' },
-                { label: 'Awards Won', value: '2' },
+                { label: 'Awards Won', value: '1' },
                 { label: 'Tech Skills', value: '15+' },
               ].map((stat) => (
                 <div key={stat.label} className="flex items-baseline justify-between border-b border-border pb-4">
