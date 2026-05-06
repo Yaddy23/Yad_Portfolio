@@ -31,13 +31,12 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="font-display text-4xl md:text-7xl lg:text-8xl text-foreground leading-[0.95] max-w-4xl mb-16 md:mb-24"
         >
-          Detail-oriented.{' '}
-          <span className="italic">Technical.</span>{' '}
-          Driven by{' '}
-          <span className="text-primary">quality</span>{' '}
-          from code to delivery.
+          <ul className="list-disc font-display text-4xl md:text-7xl lg:text-8xl text-foreground leading-[1.15] max-w-6xl mb-16 md:mb-24">
+          <li>Detail-oriented.</li>
+          <li>Technical.</li>
+          <li>Driven by quality from code to delivery.</li>
+          </ul>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
@@ -60,12 +59,12 @@ export default function AboutSection() {
 
             {/* Certs */}
             <div>
-              <p className="font-mono text-[10px] tracking-[0.3em] text-primary uppercase mb-4">Certificates</p>
-              <ul className="space-y-3">
+              <p className="font-body text-lg leading-[1.8] text-muted-foreground mb-8">Certificates</p>
+              <ul className="space-y-0.01">
                 {CERTS.map((cert) => (
-                  <li key={cert} className="flex items-start gap-3">
-                    <span className="mt-2 block w-1 h-1 rounded-full bg-primary flex-shrink-0" />
-                    <span className="font-mono text-xs text-muted-foreground">{cert}</span>
+                  <li key={cert} className="flex items-start">
+                    <span className="mt-2 block h-1 rounded-full bg-primary flex-shrink-0" />
+                    <span className="font-body text-lg leading-[1.8] text-muted-foreground mb-5">{cert}</span>
                   </li>
                 ))}
               </ul>
@@ -84,14 +83,14 @@ export default function AboutSection() {
               {[
                 { label: 'Projects Built', value: '4' },
                 { label: 'QA Internship', value: '6mo' },
-                { label: 'Awards Won', value: '1' },
+                { label: 'Award Won', value: 'DOST–NCR R&D Conference 3rd Place'},
                 { label: 'Tech Skills', value: '15+' },
               ].map((stat) => (
                 <div key={stat.label} className="flex items-baseline justify-between border-b border-border pb-4">
                   <span className="font-mono text-[10px] md:text-xs tracking-[0.2em] text-muted-foreground uppercase">
                     {stat.label}
                   </span>
-                  <span className="font-display text-3xl md:text-4xl text-foreground">
+                  <span className="font-display text-3xl md:text-4xl text-foreground text-right">
                     {stat.value}
                   </span>
                 </div>

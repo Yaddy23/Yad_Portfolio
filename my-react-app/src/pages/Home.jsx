@@ -47,7 +47,7 @@ const PROJECTS = [
     title: 'HRM QA Testing',
     year: '2022–2023',
     role: 'QA Intern',
-    tech: 'Manual Testing · Selenium · Postman',
+    tech: 'Manual Testing · Agile · Selenium · Postman',
     duration: '6 months',
     description: 'Performed manual testing and created detailed bug reports for mobile HRM applications at Mustard Seed Systems Corporation. Collaborated on UI/UX improvements, assisted in Crystal Report generation and validation for client demos, and helped configure and test ZK Access biometric devices for access control.',
     image: qapic,
