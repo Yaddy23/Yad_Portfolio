@@ -87,7 +87,7 @@ export default function AboutSection() {
                 { label: 'Tech Skills', value: '15+' },
               ].map((stat) => (
                 <div key={stat.label} className="flex items-baseline justify-between border-b border-border pb-4">
-                  <span className="font-mono text-[10px] md:text-xs tracking-[0.2em] text-muted-foreground uppercase">
+                  <span className="font-body text-[15px] md:text-xs tracking-[0.2em] text-muted-foreground uppercase">
                     {stat.label}
                   </span>
                   <span className="font-display text-3xl md:text-4xl text-foreground text-right">
@@ -99,12 +99,12 @@ export default function AboutSection() {
 
             {/* Skills */}
             <div>
-              <p className="font-mono text-[10px] tracking-[0.3em] text-primary uppercase mb-4">Technical Skills</p>
+              <p className="font-body text-[15px] md:text-xs tracking-[0.3em] text-primary uppercase mb-4">Technical Skills</p>
               <div className="flex flex-wrap gap-2">
                 {SKILLS.map((skill) => (
                   <span
                     key={skill}
-                    className="font-mono text-[10px] tracking-[0.15em] px-3 py-1.5 border border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors duration-300"
+                    className="font-mono text-[15px] tracking-[0.15em] px-3 py-1.5 border border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors duration-300"
                   >
                     {skill}
                   </span>
