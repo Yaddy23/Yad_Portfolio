@@ -22,7 +22,7 @@ export default function ContactSection() {
             <p className="font-mono text-[10px] md:text-xs tracking-[0.4em] text-primary uppercase mb-8">
               Start a Conversation
             </p>
-            <h2 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground leading-[0.9] mb-8">
+            <h2 className="font-mono text-5xl md:text-7xl lg:text-8xl text-foreground leading-[0.9] mb-8">
               Let's build
               <br />
               <span className="italic">something</span>
@@ -37,19 +37,22 @@ export default function ContactSection() {
             <div className="mt-12 space-y-4">
               <a
                 href="mailto:geraldnava2328@gmail.com"
-                className="block font-mono text-xs tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors"
+                className="block font-body text-lg text-muted-foreground leading-relaxed max-w-md"
               >
                 geraldnava2328@gmail.com
               </a>
               <a
                 href="tel:+639395092799"
-                className="block font-mono text-xs tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors"
+                className="block font-body text-lg text-muted-foreground leading-relaxed max-w-md"
               >
                 +63 939 509 2799
               </a>
-              <p className="font-mono text-xs tracking-[0.2em] text-muted-foreground">
+              <a
+                href="https://www.google.com/maps/place/Quezon+City,+Philippines"
+                className="block font-body text-lg text-muted-foreground leading-relaxed max-w-md"
+              >
                 Quezon City, Philippines
-              </p>
+              </a>
             </div>
           </motion.div>
 
