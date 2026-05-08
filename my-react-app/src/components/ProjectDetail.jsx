@@ -67,8 +67,15 @@ export default function ProjectDetail({ project, onClose }) {
 
               <div className="space-y-6">
                 <div>
-                  <p className="font-mono text-[10px] tracking-[0.3em] text-muted-foreground uppercase mb-1">Tech Stack</p>
-                  <p className="font-body text-foreground">{project.tech}</p>
+                  <p className="font-mono text-[10px] tracking-[0.3em] text-muted-foreground uppercase mb-3">Tech Stack</p>
+                  <ul className="flex flex-col gap-x-4 gap-y-2 font-body text-foreground">
+                    {project.tech?.map((item, index) => (
+                      <li key={index} className="flex items-center text-sm md:text-base">
+                        <span className="mr-2 text-muted-foreground opacity-50">•</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 <div>
                   <p className="font-mono text-[10px] tracking-[0.3em] text-muted-foreground uppercase mb-1">Role</p>
