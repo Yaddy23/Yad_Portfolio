@@ -7,10 +7,8 @@ export default function HorizontalGallery({ projects, onProjectClick }) {
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
 
-  // Smooth Scroll logic
   const handleMouseDown = (e) => {
     setIsDragging(true);
-    // Use e.pageX for global mouse position
     setStartX(e.pageX - scrollRef.current.offsetLeft);
     setScrollLeft(scrollRef.current.scrollLeft);
   };
@@ -24,7 +22,6 @@ export default function HorizontalGallery({ projects, onProjectClick }) {
     e.preventDefault();
     
     const x = e.pageX - scrollRef.current.offsetLeft;
-    // Multiplier of 1.5 - 2.0 usually feels most "natural"
     const walk = (x - startX) * 1.5; 
     scrollRef.current.scrollLeft = scrollLeft - walk;
   };
@@ -36,10 +33,9 @@ export default function HorizontalGallery({ projects, onProjectClick }) {
     const handleWheel = (e) => {
       if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
         e.preventDefault();
-        // Modern browsers handle smooth scroll behaviors better with this:
         el.scrollTo({
           left: el.scrollLeft + e.deltaY * 1.5,
-          behavior: 'auto' // 'smooth' can sometimes lag with wheel events
+          behavior: 'auto'
         });
       }
     };
@@ -61,7 +57,6 @@ export default function HorizontalGallery({ projects, onProjectClick }) {
         onMouseUp={stopDragging}
         onMouseLeave={stopDragging}
         onMouseMove={handleMouseMove}
-        // KEY CHANGE: We remove snap-x while dragging to prevent stutter
         className={`
           flex gap-8 md:gap-12 overflow-x-auto px-6 md:px-12 pb-16 
           scrollbar-hide touch-pan-x transition-colors duration-300
@@ -75,7 +70,6 @@ export default function HorizontalGallery({ projects, onProjectClick }) {
           <div 
             key={project.id} 
             className="snap-center shrink-0"
-            // Prevents dragging from triggering a click on the card
             onClickCapture={(e) => isDragging && e.stopPropagation()}
           >
             <ProjectCard project={project} index={i} onClick={onProjectClick} />
