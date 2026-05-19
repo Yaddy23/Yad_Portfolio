@@ -65,7 +65,6 @@ export default function ProjectCard({ project, index, onClick }) {
           <div className="flex gap-6 font-mono text-[10px] md:text-xs tracking-[0.15em] text-muted-foreground">
             <span>{project.year}</span>
             <span>{project.role}</span>
-            <span>{project.tech}</span>
           </div>
         </motion.div>
       </div>
