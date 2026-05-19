@@ -34,12 +34,12 @@ const PROJECTS = [
   },
   {
     id: 3,
-    title: 'Book Inventory',
+    title: 'New Century Books Cloud Inventory System',
     year: '2023–Present',
     role: 'Full-Stack Developer',
-    tech: ['C#', 'WinForms', 'MongoDB', 'GitHub'],
+    tech: ['C#', 'WinForms', 'MongoDB', 'GitHub', 'SQL', 'MongoDB', 'API Integration'],
     duration: 'Ongoing',
-    description: 'Built a Book Inventory Tracking System using C# WinForms and MongoDB, supporting stock monitoring, item scanning, and real-time updates. Implemented authentication features, integrated APIs for real-time data synchronization, and used GitHub for version control alongside AI-assisted development tools.',
+    description: 'Built a Book Inventory Tracking System using C# WinForms and MongoDB, supporting stock monitoring, item scanning, bulk importing of books(in/out), and real-time updates. Implemented authentication features, integrated APIs for real-time data synchronization, and used GitHub for version control alongside AI-assisted development tools.',
     image: bookinv,
   },
   {
