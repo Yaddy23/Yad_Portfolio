@@ -51,7 +51,7 @@ export default function HeroSection({ heroImage, onExplore }) {
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
         >
           <p className="font-mono text-xs md:text-sm tracking-[0.4em] text-primary mb-6 md:mb-8 uppercase">
-            BSIT Graduate &amp; Software QA Engineer
+            IT Administrator
           </p>
           <h1 className="font-display text-[14vw] md:text-[12vw] leading-[0.85] tracking-[-0.05em] text-foreground font-bold">
             Gerald
